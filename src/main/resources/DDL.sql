@@ -74,4 +74,6 @@ ALTER TABLE solution
 ALTER TABLE home_work
     ALTER COLUMN title TYPE VARCHAR(50),
     ALTER COLUMN file_path TYPE VARCHAR(100);
-ALTER TABLE course ALTER COLUMN
+
+ALTER TABLE course
+    ADD UNIQUE (title);
